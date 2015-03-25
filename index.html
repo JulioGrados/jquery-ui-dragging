@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clase jquery ui</title>
+	<link rel="stylesheet" type="text/css" href="css/theme/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/theme/miEstilo.css">
+</head>
+<body>
+	<div id="draggable" class="ui-widget-content">
+		<p>Drag me</p>
+	</div>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/jquery-ui.js"></script>
+
+	<script>
+		$(function(){
+			$("#draggable").draggable({
+				addClass: false
+			});
+		});
+	</script>
+</body>
+</html>
